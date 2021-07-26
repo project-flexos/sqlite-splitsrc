@@ -14,7 +14,8 @@ tclsh ./tool/split-sqlite3c.tcl
 mkdir $NAME
 mv sqlite*.c ${NAME}
 mv shell.* ${NAME}
-mv *.h ${NAME}
+mv sqlite3.h ${NAME}
+mv sqlite3ext.h ${NAME}
 zip -r ../generated/${NAME}.zip ${NAME}
 popd
 rm -rf sqlite
